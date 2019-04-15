@@ -9,6 +9,7 @@ verify_ssl = true
 line-bot-sdk = "*"
 flask = "*"
 gunicorn = "*"
+beautifulsoup4 = "*"
 
 [requires]
 python_version = "3.6"
