@@ -132,7 +132,7 @@ def parse_response_message(criticism_dic, total_count):
 
     for category, criticisms in criticism_dic.items():
         each_category_count = reduce(lambda x, y: x + y, criticisms.values(), 0)
-        response += '【{}: {:.0%}】\n'.format(category, (each_category_count/total_count))
+        response += '【{}: {:.1%}】\n'.format(category, (each_category_count/total_count))
         for criticism, count in criticisms.items():
             response += criticism + ': ' + str(count) + ' 篇\n'
         response += '\n'
